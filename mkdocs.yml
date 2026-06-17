@@ -1,0 +1,52 @@
+site_name: CortexDB - A persistent memory for LLMs
+
+
+theme:
+  name: material
+
+  palette:
+  - scheme: default
+    primary: blue
+    accent: indigo
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+
+  - scheme: slate
+    primary: blue
+    accent: indigo
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.tabs
+    - navigation.instant
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Getting Started: index.md
+
+  - System Architecture: architecture.md
+
+  - User Guide: userguide.md
