@@ -40,7 +40,7 @@ Example:
 
 ### 2. Clear All Memories
 
-To permanently delete your entire memory vault, run:
+To permanently delete your entire memory, run:
 
 ```bash
 clear memories
@@ -58,9 +58,40 @@ Once confirmed, all stored memories are permanently removed from the local datab
 
 ---
 
+### 3. Delete a specific memory
+
+Instead of clearing all memories, the user can delete some specific memories which are of no use or have become obsolete.
+
+To delete a memory, use the following command:
+
+```bash
+delete memory <memory-id>
+```
+
+For example:
+
+```text
+delete memory 3
+```
+---
+
+### 4. Memory function toggle
+
+If the user wants to temporarily disable the memory logging feature from the current session, to prevent the reading and storing of any of the current chat sessions, the following command can be used:
+
+```bash
+memory off
+```
+
+To turn the memory logging feature on again, use the following command:
+
+```bash
+memory on
+```
+
 ## Using Different Local Models
 
-CortexDB is model-agnostic.
+CortexDB is model agnostic, meaning it can function with any local model of your choice. 
 
 It is designed to work with any model available through Ollama.
 
@@ -135,5 +166,8 @@ cortexdb --model qwen3:4b
 | `show memories` | Display all stored memories |
 | `clear memories` | Permanently delete all memories |
 | `cortexdb --model <model_name>` | Launch CortexDB with a specific model |
+| `delete memory  <memory_id>`  | Delete a specific memory from the database |
+| `memory on` | To turn on the memory logging feature |
+| `memory off` | To turn on the memory logging feature |
 
 > **Note:** All memories are stored locally and encrypted before being written to disk. No data is sent to external servers unless you explicitly configure a cloud based model provider.
