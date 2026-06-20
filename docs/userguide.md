@@ -73,6 +73,7 @@ For example:
 ```text
 delete memory 3
 ```
+
 ---
 
 ### 4. Memory function toggle
