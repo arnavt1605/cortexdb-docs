@@ -445,6 +445,45 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#3-delete-a-specific-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Delete a specific memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-memory-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        delete memory 3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="delete memory 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-memory-function-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Memory function toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -579,6 +618,45 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#3-delete-a-specific-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Delete a specific memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-memory-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        delete memory 3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="delete memory 3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-memory-function-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Memory function toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -687,7 +765,7 @@
 </span></code></pre></div>
 <hr />
 <h3 id="2-clear-all-memories">2. Clear All Memories<a class="headerlink" href="#2-clear-all-memories" title="Permanent link">&para;</a></h3>
-<p>To permanently delete your entire memory vault, run:</p>
+<p>To permanently delete your entire memory, run:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>clear<span class="w"> </span>memories
 </span></code></pre></div>
 <p>Before deletion, CortexDB will ask for confirmation.</p>
@@ -696,44 +774,59 @@
 <p>This extra step helps prevent accidental data loss.</p>
 <p>Once confirmed, all stored memories are permanently removed from the local database.</p>
 <hr />
+<h3 id="3-delete-a-specific-memory">3. Delete a specific memory<a class="headerlink" href="#3-delete-a-specific-memory" title="Permanent link">&para;</a></h3>
+<p>Instead of clearing all memories, the user can delete some specific memories which are of no use or have become obsolete.</p>
+<p>To delete a memory, use the following command:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>delete<span class="w"> </span>memory<span class="w"> </span>&lt;memory-id&gt;
+</span></code></pre></div>
+<p>For example:</p>
+<h2 id="delete-memory-3"><div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>delete memory 3
+</span></code></pre></div><a class="headerlink" href="#delete-memory-3" title="Permanent link">&para;</a></h2>
+<h3 id="4-memory-function-toggle">4. Memory function toggle<a class="headerlink" href="#4-memory-function-toggle" title="Permanent link">&para;</a></h3>
+<p>If the user wants to temporarily disable the memory logging feature from the current session, to prevent the reading and storing of any of the current chat sessions, the following command can be used:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>memory<span class="w"> </span>off
+</span></code></pre></div>
+<p>To turn the memory logging feature on again, use the following command:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>memory<span class="w"> </span>on
+</span></code></pre></div>
 <h2 id="using-different-local-models">Using Different Local Models<a class="headerlink" href="#using-different-local-models" title="Permanent link">&para;</a></h2>
-<p>CortexDB is model-agnostic.</p>
+<p>CortexDB is model agnostic, meaning it can function with any local model of your choice. </p>
 <p>It is designed to work with any model available through Ollama.</p>
 <p>By default, the application uses <a href="https://ollama.com/library/llama3.1:8b"><code>llama3.1:8b</code></a>, but you can easily switch to another model depending on your hardware and preferences.</p>
 <h3 id="launch-with-a-specific-model">Launch With A Specific Model<a class="headerlink" href="#launch-with-a-specific-model" title="Permanent link">&para;</a></h3>
 <p>Use the <code>--model</code> (or <code>-m</code>) argument when starting the application.</p>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cortexdb<span class="w"> </span>--model<span class="w"> </span>gemma2
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>cortexdb<span class="w"> </span>--model<span class="w"> </span>gemma2
 </span></code></pre></div>
 <p>or</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>cortexdb<span class="w"> </span>-m<span class="w"> </span>gemma2
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>cortexdb<span class="w"> </span>-m<span class="w"> </span>gemma2
 </span></code></pre></div>
 <hr />
 <h2 id="handling-missing-models">Handling Missing Models<a class="headerlink" href="#handling-missing-models" title="Permanent link">&para;</a></h2>
 <p>If you try to load a model that is not installed, CortexDB will safely handle the error instead of crashing.</p>
 <p>Example:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Model &#39;phi3&#39; was not found.
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>Installed models:
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>- llama3.1
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>- mistral
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>- gemma2
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>Please install the model first:
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>ollama pull phi3
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Model &#39;phi3&#39; was not found.
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Installed models:
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>- llama3.1
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>- mistral
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>- gemma2
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>Please install the model first:
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>ollama pull phi3
 </span></code></pre></div>
 <hr />
 <h2 id="downloading-new-models">Downloading New Models<a class="headerlink" href="#downloading-new-models" title="Permanent link">&para;</a></h2>
 <p>To install a new model, use the standard Ollama command.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ollama<span class="w"> </span>pull<span class="w"> </span>&lt;model_name&gt;
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>ollama<span class="w"> </span>pull<span class="w"> </span>&lt;model_name&gt;
 </span></code></pre></div>
 <p>Example:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen3:4b
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>ollama<span class="w"> </span>pull<span class="w"> </span>qwen3:4b
 </span></code></pre></div>
 <p>After the download completes, you can immediately launch CortexDB with the new model.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>cortexdb<span class="w"> </span>--model<span class="w"> </span>qwen3:4b
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>cortexdb<span class="w"> </span>--model<span class="w"> </span>qwen3:4b
 </span></code></pre></div>
 <hr />
 <h2 id="available-system-commands">Available System Commands<a class="headerlink" href="#available-system-commands" title="Permanent link">&para;</a></h2>
@@ -756,6 +849,18 @@
 <tr>
 <td><code>cortexdb --model &lt;model_name&gt;</code></td>
 <td>Launch CortexDB with a specific model</td>
+</tr>
+<tr>
+<td><code>delete memory  &lt;memory_id&gt;</code></td>
+<td>Delete a specific memory from the database</td>
+</tr>
+<tr>
+<td><code>memory on</code></td>
+<td>To turn on the memory logging feature</td>
+</tr>
+<tr>
+<td><code>memory off</code></td>
+<td>To turn on the memory logging feature</td>
 </tr>
 </tbody>
 </table>
