@@ -50,3 +50,5 @@ nav:
   - System Architecture: architecture.md
 
   - User Guide: userguide.md
+
+  - Release Notes: changelog.md
