@@ -1,8 +1,6 @@
 # Release Notes
 
-All notable changes to CortexDB are documented here.
-
-This project follows Semantic Versioning.
+All notable changes to CortexDB are documented here. This project follows Semantic Versioning.
 
 ---
 
