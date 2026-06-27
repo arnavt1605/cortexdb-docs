@@ -28,6 +28,9 @@ theme:
     - search.highlight
     - content.code.copy
 
+repo_url: https://github.com/arnavt1605/Cortex
+repo_name: CortexDB
+
 plugins:
   - search
 
