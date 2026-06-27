@@ -63,4 +63,4 @@ Permanently deletes all stored memories after confirmation.
 
 - Two-stage retrieval pipeline using embeddings and reranking.
 
-- Encoding Gate to prevent duplicate and noisy memories from being stored.
+- Encoding Gate to prevent duplicate and noisy memories from being stored
