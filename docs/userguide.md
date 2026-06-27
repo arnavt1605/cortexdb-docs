@@ -92,7 +92,7 @@ memory on
 
 ## Using Different Local Models
 
-CortexDB is model agnostic, meaning it can function with any local model of your choice. 
+CortexDB is model agnostic, meaning it can function with any local model of your choice.
 
 It is designed to work with any model available through Ollama.
 
@@ -163,11 +163,11 @@ cortexdb --model qwen3:4b
 ## Available System Commands
 
 | Command | Description |
-|---------|-------------|
+| --------- | ------------- |
 | `show memories` | Display all stored memories |
 | `clear memories` | Permanently delete all memories |
 | `cortexdb --model <model_name>` | Launch CortexDB with a specific model |
-| `delete memory  <memory_id>`  | Delete a specific memory from the database |
+| `delete memory <memory_id>` | Delete a specific memory from the database |
 | `memory on` | To turn on the memory logging feature |
 | `memory off` | To turn on the memory logging feature |
 

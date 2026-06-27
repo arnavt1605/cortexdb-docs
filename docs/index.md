@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Cortex is a privacy first, locally hosted LLM that remembers your conversations over time. Built as a command line interface(CLI), it solves the "AI amnesia" problem by automatically extracting and deduplicating key facts from your chats. 
+Cortex is a privacy first, locally hosted LLM that remembers your conversations over time. Built as a command line interface(CLI), it solves the "AI amnesia" problem by automatically extracting and deduplicating key facts from your chats.
 
 Under the hood, it uses an AES-GCM encrypted SQLite vault and a two stage Retrieval Augmented Generation (RAG) pipeline to silently inject relevant memories into your future prompts. Everything runs 100% offline using your local Ollama models, ensuring your personal data never leaves your machine.
 
-## Getting Started 
+## Getting Started
 
 ### Prerequisites
 
